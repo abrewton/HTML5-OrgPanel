@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Org-Chart</title>
+        <script src="CheckBoxStudio.OrgPanel.js"></script>
+    </head>
+    <body style="font: 12px 'Segoe UI'">
+
+        <style cb:orgnodestyle id="style1"
+            cb:corners="squared"
+            cb:bordercolor="green"
+            cb:startcolor="white"
+            cb:endcolor="lightgreen">
+        </style>
+
+        <style cb:orgnodestyle id="style2"
+            cb:corners="beveled"
+            cb:bordercolor="blue"
+            cb:startcolor="white"
+            cb:endcolor="lightblue">
+        </style>
+
+        <div cb:orgpanel style="border: 1px solid gray;">
+
+            <span id="node1">Node 1</span>
+            <span id="node2" cb:parentid="node1" cb:styleid="style1">Node 2</span>
+            <span id="node3" cb:parentid="node1" cb:styleid="style1">Node 3</span>
+            <span id="node4" cb:parentid="node3" cb:styleid="style2">Node 4</span>
+            <span id="node5" cb:parentid="node3" cb:styleid="style2">Node 5</span>
+
+        </div>
+
+    </body>
+</html>
+
+
+
+
